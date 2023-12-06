@@ -1,5 +1,5 @@
 {
-    "name": "matthewbdaly/laravel-azure-storage",
+    "name": "cwssrl/laravel-azure-storage",
     "description": "Microsoft Azure Blob Storage integration for Laravel's Storage API",
     "type": "library",
     "keywords": ["storage","laravel","azure", "blob"],
@@ -23,13 +23,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Matthew Daly",
-            "email": "matthewbdaly@gmail.com"
+            "name": "Nereo Berardozzi",
+            "email": "chack1172@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Matthewbdaly\\LaravelAzureStorage\\": "src/"
+            "Cws\\LaravelAzureStorage\\": "src/"
         }
     },
     "autoload-dev": {
@@ -40,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Matthewbdaly\\LaravelAzureStorage\\AzureStorageServiceProvider"
+                "Cws\\LaravelAzureStorage\\AzureStorageServiceProvider"
             ]
         }
     },

@@ -1,11 +1,3 @@
-## DEPRECATION NOTICE
-
-This package is dependent on Flysystem's Azure Blob Storage integration. The creator of that has announced that because Microsoft are dropping support for their PHP storage client, he will also be dropping Azure support from Flysystem in 2024.
-
-As a result, there is no viable path for me to continue to maintain this package past that point. It will therefore be deprecated at the same time.
-
-If you're currently using this package on a project, I suggest you begin considering alternatives to Azure that are officially supported by Laravel, such as Amazon S3.
-
 # laravel-azure-storage
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/matthewbdaly/laravel-azure-storage/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/matthewbdaly/laravel-azure-storage/tree/master)
 
@@ -18,7 +10,7 @@ This is a custom driver for [Laravel's File Storage API](https://laravel.com/doc
 Install the package using composer:
 
 ```bash
-composer require matthewbdaly/laravel-azure-storage
+composer require cwssrl/laravel-azure-storage
 ```
 
 Then add this to the `disks` section of `config/filesystems.php`:
@@ -31,7 +23,7 @@ Then add this to the `disks` section of `config/filesystems.php`:
             'container' => env('AZURE_STORAGE_CONTAINER'),
             'url'       => env('AZURE_STORAGE_URL'),
             'prefix'    => null,
-            'connection_string' => env('AZURE_STORAGE_CONNECTION_STRING') // optional, will override default endpoint builder 
+            'connection_string' => env('AZURE_STORAGE_CONNECTION_STRING') // optional, will override default endpoint builder
         ],
 ```
 
