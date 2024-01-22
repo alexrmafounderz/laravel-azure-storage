@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests;
 
 use Illuminate\Config\Repository;
-use Matthewbdaly\LaravelAzureStorage\AzureStorageServiceProvider;
+use Cws\LaravelAzureStorage\AzureStorageServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase

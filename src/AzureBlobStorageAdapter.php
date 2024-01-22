@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Matthewbdaly\LaravelAzureStorage;
+namespace Cws\LaravelAzureStorage;
 
 use Illuminate\Support\Arr;
-use League\Flysystem\AzureBlobStorage\AzureBlobStorageAdapter as BaseAzureBlobStorageAdapter;
-use Matthewbdaly\LaravelAzureStorage\Exceptions\InvalidCustomUrl;
-use Matthewbdaly\LaravelAzureStorage\Exceptions\KeyNotSet;
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\Blob\BlobSharedAccessSignatureHelper;
+use Cws\Flysystem\AzureBlobStorage\AzureBlobStorageAdapter as BaseAzureBlobStorageAdapter;
+use Cws\LaravelAzureStorage\Exceptions\InvalidCustomUrl;
+use Cws\LaravelAzureStorage\Exceptions\KeyNotSet;
+use AzureOSS\Storage\Blob\BlobRestProxy;
+use AzureOSS\Storage\Blob\BlobSharedAccessSignatureHelper;
 
 /**
  * Blob storage adapter
@@ -56,7 +56,7 @@ final class AzureBlobStorageAdapter extends BaseAzureBlobStorageAdapter
     /**
      * Create a new AzureBlobStorageAdapter instance.
      *
-     * @param \MicrosoftAzure\Storage\Blob\BlobRestProxy $client Client.
+     * @param \AzureOSS\Storage\Blob\BlobRestProxy $client Client.
      * @param string $container Container.
      * @param string $key
      * @param string|null $url URL.

@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Matthewbdaly\LaravelAzureStorage;
+namespace Cws\LaravelAzureStorage;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
-use Matthewbdaly\LaravelAzureStorage\Exceptions\EndpointNotSet;
-use Matthewbdaly\LaravelAzureStorage\Exceptions\KeyNotSet;
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\Common\Middlewares\RetryMiddleware;
-use MicrosoftAzure\Storage\Common\Middlewares\RetryMiddlewareFactory;
+use Cws\LaravelAzureStorage\Exceptions\EndpointNotSet;
+use Cws\LaravelAzureStorage\Exceptions\KeyNotSet;
+use AzureOSS\Storage\Blob\BlobRestProxy;
+use AzureOSS\Storage\Common\Middlewares\RetryMiddleware;
+use AzureOSS\Storage\Common\Middlewares\RetryMiddlewareFactory;
 
 /**
  * Service provider for Azure Blob Storage

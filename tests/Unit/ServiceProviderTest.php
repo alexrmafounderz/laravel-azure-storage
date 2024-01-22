@@ -8,9 +8,9 @@ use Illuminate\Config\Repository;
 use Illuminate\Filesystem\FilesystemManager;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
-use Matthewbdaly\LaravelAzureStorage\Exceptions\EndpointNotSet;
-use Matthewbdaly\LaravelAzureStorage\Exceptions\KeyNotSet;
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
+use Cws\LaravelAzureStorage\Exceptions\EndpointNotSet;
+use Cws\LaravelAzureStorage\Exceptions\KeyNotSet;
+use AzureOSS\Storage\Blob\BlobRestProxy;
 
 it('sets up the storage correctly', function (): void {
     $storage = $this->app['filesystem'];
