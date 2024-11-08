@@ -4,7 +4,8 @@
     "type": "library",
     "keywords": ["storage","laravel","azure", "blob"],
     "require": {
-        "cwssrl/flysystem-azure-blob-storage": "^3.23"
+        "cwssrl/flysystem-azure-blob-storage": "^3.23",
+        "alexrmafounderz/flysystem-azure-blob-storage": "3.x"
     },
     "require-dev": {
         "infection/infection": "^0.26.15",
@@ -51,5 +52,11 @@
             "infection/extension-installer": true,
             "pestphp/pest-plugin": true
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/alexrmafounderz/flysystem-azure-blob-storage"
+        }
+    ]
 }
