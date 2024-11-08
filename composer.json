@@ -1,5 +1,5 @@
 {
-    "name": "cwssrl/laravel-azure-storage",
+    "name": "alexrmafounderz/laravel-azure-storage",
     "description": "Microsoft Azure Blob Storage integration for Laravel's Storage API",
     "type": "library",
     "keywords": ["storage","laravel","azure", "blob"],
