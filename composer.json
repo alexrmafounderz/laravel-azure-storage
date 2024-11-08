@@ -4,8 +4,7 @@
     "type": "library",
     "keywords": ["storage","laravel","azure", "blob"],
     "require": {
-        "cwssrl/flysystem-azure-blob-storage": "^3.23",
-        "alexrmafounderz/flysystem-azure-blob-storage": "3.x"
+        "alexrmafounderz/flysystem-azure-blob-storage": "dev-master"
     },
     "require-dev": {
         "infection/infection": "^0.26.15",
