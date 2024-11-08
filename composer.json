@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "alexrmafounderz/flysystem-azure-blob-storage": "dev-3.x"
+        "alexrmafounderz/flysystem-azure-blob-storage": "3.x-dev"
     },
     "require-dev": {
         "infection/infection": "^0.26.15",
@@ -56,8 +56,8 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/alexrmafounderz/flysystem-azure-blob-storage"
+            "type": "git",
+            "url": "https://github.com/alexrmafounderz/flysystem-azure-blob-storage.git"
         }
     ]
 }
