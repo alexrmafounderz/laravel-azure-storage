@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "alexrmafounderz/flysystem-azure-blob-storage": "dev-master"
+        "alexrmafounderz/flysystem-azure-blob-storage": "dev-master@dev"
     },
     "require-dev": {
         "infection/infection": "^0.26.15",
